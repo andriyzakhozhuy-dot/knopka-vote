@@ -34,21 +34,31 @@ export default function VoteSection() {
     let cancelled = false;
 
     async function init() {
-      const res = await fetch('/api/votes');
-      const data = await res.json();
-      if (cancelled) return;
-      countRef.current = data.count;
-      animateCount(0, data.count);
-      if (data.voted) setVoted(true);
+      try {
+        const res = await fetch('/api/votes');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (cancelled) return;
+        countRef.current = data.count;
+        animateCount(0, data.count);
+        if (data.voted) setVoted(true);
+      } catch {
+        // Ignore network errors; the next poll tick will retry.
+      }
     }
     init();
 
     const interval = setInterval(async () => {
-      const res = await fetch('/api/votes');
-      const data = await res.json();
-      if (data.count !== countRef.current) {
-        animateCount(countRef.current, data.count);
-        countRef.current = data.count;
+      try {
+        const res = await fetch('/api/votes');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.count !== countRef.current) {
+          animateCount(countRef.current, data.count);
+          countRef.current = data.count;
+        }
+      } catch {
+        // Ignore network errors; the next poll tick will retry.
       }
     }, 4000);
 
