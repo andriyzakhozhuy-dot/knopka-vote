@@ -1,7 +1,7 @@
 import type { Redis } from '@upstash/redis';
 
 export const VOTE_COUNT_KEY = 'votes:count';
-export const INITIAL_VOTE_COUNT = 218;
+export const INITIAL_VOTE_COUNT = 44;
 export const RATE_LIMIT_TTL_SECONDS = 60 * 60 * 24;
 
 export async function getVoteCount(redis: Redis): Promise<number> {
