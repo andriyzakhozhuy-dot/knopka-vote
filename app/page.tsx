@@ -75,6 +75,36 @@ export default function Home() {
                 </a>
               </div>
               <div className="store-line">
+                <span className="ic">📍</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2C%2067a%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%2033027"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  вулиця Київська, 67а, Рівне, Рівненська область, 33027
+                </a>
+              </div>
+              <div className="store-line">
+                <span className="ic">📍</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%93%D0%B5%D1%80%D0%BE%D1%97%D0%B2%20%D0%BF%D0%BE%D0%BB%D1%96%D1%86%D1%96%D1%97%2C%2040%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%2033017"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  вулиця Героїв поліції, 40, Рівне, Рівненська область, 33017
+                </a>
+              </div>
+              <div className="store-line">
+                <span className="ic">📍</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D1%8F%20%D0%91%D0%B0%D1%87%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C%205%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%2033017"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  вулиця Сергія Бачинського, 5, Рівне, Рівненська область, 33017
+                </a>
+              </div>
+              <div className="store-line">
                 <span className="ic">🕘</span>
                 <div className="store-hours">
                   <span>Пн–Пт: 08:30–19:00</span>
