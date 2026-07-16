@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import VoteSection from '@/components/VoteSection';
 import ShareButtons from '@/components/ShareButtons';
 import ConfettiCanvas from '@/components/ConfettiCanvas';
@@ -15,15 +16,14 @@ export default function Home() {
 
       <div className="wrap">
         <header className="reveal">
-          <svg className="logo-arc" viewBox="0 0 320 90" width="240" height="64">
-            <path id="arcPath" d="M 8 82 A 152 152 0 0 1 312 82" fill="none" />
-            <text textAnchor="middle">
-              <textPath href="#arcPath" startOffset="50%">ART GIFTS TREND SHOP</textPath>
-            </text>
-          </svg>
-          <div className="logo">KN<span className="o-dot" />PKA</div>
-          <div className="logo-sub">офіс <span className="dot" />творчість<span className="dot" />школа</div>
-          <div className="logo-sub2">іграшка <span className="dot" />horeca<span className="dot" />подарунки</div>
+          <Image
+            className="logo-img"
+            src="/logo.png"
+            alt="Кнопка — Art Gifts Trend Shop"
+            width={1280}
+            height={640}
+            priority
+          />
         </header>
 
         <section className="hero reveal">

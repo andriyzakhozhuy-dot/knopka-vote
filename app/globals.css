@@ -66,85 +66,10 @@ header{
   gap:4px;
   padding:0 0 8px;
 }
-.logo-arc{
+.logo-img{
   display:block;
-  margin-bottom:-6px;
-}
-.logo-arc text{
-  font-family:'Manrope', sans-serif;
-  font-weight:800;
-  font-size:15px;
-  fill:#111111;
-  letter-spacing:1px;
-}
-.logo{
-  font-family:'Manrope', sans-serif;
-  font-weight:800;
-  font-size:30px;
-  letter-spacing:0.5px;
-  color:#111111;
-  display:flex;
-  align-items:center;
-  gap:2px;
-}
-.logo .o-dot{
-  display:inline-block;
-  width:24px; height:24px;
-  border-radius:50%;
-  background:conic-gradient(
-    var(--yellow) 0deg 40deg,
-    var(--red) 40deg 90deg,
-    #E85AA0 90deg 130deg,
-    var(--blue) 130deg 180deg,
-    var(--teal-700) 180deg 225deg,
-    var(--green) 225deg 270deg,
-    var(--yellow) 270deg 320deg,
-    var(--red) 320deg 360deg
-  );
-  position:relative;
-  top:1px;
-}
-.logo .o-dot::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  margin:auto;
-  width:6px; height:6px;
-  background:#fff;
-  clip-path:polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
-}
-.logo-sub{
-  font-size:11px;
-  letter-spacing:3px;
-  color:#111111;
-  font-weight:600;
-  text-transform:uppercase;
-}
-.logo-sub .dot{
-  position:static;
-  display:inline-block;
-  width:4px; height:4px;
-  border-radius:50%;
-  background:var(--teal-700);
-  margin:0 6px;
-  box-shadow:none;
-}
-.logo-sub2{
-  font-size:11px;
-  letter-spacing:3px;
-  color:#111111;
-  font-weight:600;
-  text-transform:uppercase;
-  margin-top:2px;
-}
-.logo-sub2 .dot{
-  position:static;
-  display:inline-block;
-  width:4px; height:4px;
-  border-radius:50%;
-  background:var(--teal-700);
-  margin:0 6px;
-  box-shadow:none;
+  width:280px;
+  height:auto;
 }
 
 .reveal{
