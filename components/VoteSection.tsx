@@ -130,7 +130,7 @@ export default function VoteSection() {
       </div>
 
       <button className="vote-btn" disabled={voted} onClick={handleVote}>
-        {voted ? 'Дякуємо! Ваш голос враховано ✓' : 'ПРОГОЛОСУВАТИ ЗА ПРОДОВЖЕННЯ'}
+        {voted ? 'Дякуємо! Ваш голос враховано ✓' : 'ПРОГОЛОСУВАТИ'}
       </button>
       <div className="deadline">
         Голосування триває до <b>19 липня</b> — тоді ми оголосимо рішення

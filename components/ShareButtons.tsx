@@ -2,10 +2,10 @@
 
 import { showToast } from '@/lib/toast';
 
-const VOTE_URL = 'https://knopka.shop/vote';
 const SHARE_TEXT = 'Проголосуй за продовження акції «Рюкзак + в рюкзак» у Кнопці!';
 
 function shareTo(type: 'telegram' | 'viber' | 'copy') {
+  const VOTE_URL = window.location.origin;
   if (type === 'telegram') {
     window.open(
       'https://t.me/share/url?url=' + encodeURIComponent(VOTE_URL) + '&text=' + encodeURIComponent(SHARE_TEXT),

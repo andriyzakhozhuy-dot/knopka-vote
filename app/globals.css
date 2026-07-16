@@ -19,7 +19,7 @@
 
 *{box-sizing:border-box; margin:0; padding:0;}
 
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; overflow-x:hidden; max-width:100%;}
 
 body{
   font-family:'Inter', sans-serif;
@@ -29,6 +29,8 @@ body{
     radial-gradient(1000px 700px at 100% 10%, #D6EEFA 0%, transparent 55%),
     linear-gradient(180deg, var(--teal-50) 0%, #FFFFFF 40%, var(--teal-50) 100%);
   min-height:100vh;
+  width:100%;
+  max-width:100%;
   overflow-x:hidden;
   position:relative;
 }
@@ -64,11 +66,11 @@ header{
   justify-content:center;
   flex-direction:column;
   gap:4px;
-  padding:0 0 8px;
+  padding:0;
 }
 .logo-img{
   display:block;
-  width:280px;
+  width:93px;
   height:auto;
 }
 
@@ -81,7 +83,7 @@ header{
 
 .hero{
   text-align:center;
-  padding:40px 0 8px;
+  padding:30px 0 8px;
 }
 .hero h1{
   font-family:'Manrope', sans-serif;
