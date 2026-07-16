@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { showToast } from '@/lib/toast';
 import { burstConfetti } from '@/lib/confetti';
+import { trackVoteEvent } from '@/lib/analytics';
 
 const GOAL = 1000;
 const CIRC = 2 * Math.PI * 95;
@@ -93,6 +94,7 @@ export default function VoteSection() {
     countRef.current = data.count;
     burstConfetti();
     showToast('Дякуємо за ваш голос! 🎉');
+    trackVoteEvent();
   }
 
   return (
