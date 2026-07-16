@@ -70,7 +70,7 @@ header{
 }
 .logo-img{
   display:block;
-  width:93px;
+  width:140px;
   height:auto;
 }
 
@@ -83,7 +83,7 @@ header{
 
 .hero{
   text-align:center;
-  padding:30px 0 8px;
+  padding:30px 0 4px;
 }
 .hero h1{
   font-family:'Manrope', sans-serif;
@@ -92,7 +92,7 @@ header{
   line-height:1.15;
   color:var(--ink);
   max-width:720px;
-  margin:0 auto 16px;
+  margin:0 auto 12px;
 }
 .hero p{
   font-size:17px;
@@ -103,11 +103,11 @@ header{
 }
 
 .vote-card{
-  margin:40px auto 0;
+  margin:20px auto 0;
   max-width:520px;
   background:var(--card);
   border-radius:var(--radius-lg);
-  padding:40px 32px 36px;
+  padding:24px 32px 36px;
   box-shadow:0 20px 60px -20px rgba(14,124,116,0.25);
   text-align:center;
   position:relative;
@@ -124,7 +124,7 @@ header{
 .ring-wrap{
   position:relative;
   width:220px; height:220px;
-  margin:0 auto 8px;
+  margin:0 auto 6px;
 }
 .ring-wrap svg{ width:100%; height:100%; transform:rotate(-90deg); }
 .ring-bg{ fill:none; stroke:var(--teal-100); stroke-width:14; }
@@ -166,7 +166,7 @@ header{
 .dot-g{ background:var(--green); left:6px; top:50%; margin-top:-6px; }
 
 .vote-btn{
-  margin-top:22px;
+  margin-top:16px;
   width:100%;
   border:none;
   cursor:pointer;
