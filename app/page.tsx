@@ -28,7 +28,7 @@ export default function Home() {
 
         <section className="hero reveal">
           <h1>Петиція на продовження акції</h1>
-          <p>Рюкзак + знижка -50% на канцтовари до школи</p>
+          <p>Акція «Рюкзак + <b>знижка -50%</b> на канцтовари до школи»</p>
         </section>
 
         <ShareButtons />
