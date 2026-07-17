@@ -3,9 +3,7 @@ export function trackVoteEvent(): void {
   const w = window as typeof window & {
     gtag?: (...args: unknown[]) => void;
     fbq?: (...args: unknown[]) => void;
-    ttq?: { track: (...args: unknown[]) => void };
   };
   w.gtag?.('event', 'vote_click');
   w.fbq?.('track', 'Lead');
-  w.ttq?.track('ClickButton');
 }

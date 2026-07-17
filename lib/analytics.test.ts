@@ -10,20 +10,18 @@ describe('trackVoteEvent', () => {
     expect(() => trackVoteEvent()).not.toThrow();
   });
 
-  it('calls gtag, fbq, and ttq when present on window', () => {
+  it('calls gtag and fbq when present on window', () => {
     const gtag = vi.fn();
     const fbq = vi.fn();
-    const ttq = { track: vi.fn() };
-    vi.stubGlobal('window', { gtag, fbq, ttq });
+    vi.stubGlobal('window', { gtag, fbq });
 
     trackVoteEvent();
 
     expect(gtag).toHaveBeenCalledWith('event', 'vote_click');
     expect(fbq).toHaveBeenCalledWith('track', 'Lead');
-    expect(ttq.track).toHaveBeenCalledWith('ClickButton');
   });
 
-  it('does not throw when gtag/fbq/ttq are not defined', () => {
+  it('does not throw when gtag/fbq are not defined', () => {
     vi.stubGlobal('window', {});
     expect(() => trackVoteEvent()).not.toThrow();
   });
