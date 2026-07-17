@@ -25,7 +25,7 @@ export default function ShareButtons() {
       <div className="share-row">
         <button className="share-btn" onClick={() => shareTo('telegram')}>Telegram</button>
         <button className="share-btn" onClick={() => shareTo('viber')}>Viber</button>
-        <button className="share-btn" onClick={() => shareTo('copy')}>Скопіювати посилання</button>
+        <button className="share-btn" onClick={() => shareTo('copy')}>Копіювати</button>
       </div>
     </section>
   );
