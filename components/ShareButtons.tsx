@@ -21,7 +21,7 @@ function shareTo(type: 'telegram' | 'viber' | 'copy') {
 export default function ShareButtons() {
   return (
     <section className="share reveal">
-      <p>Розкажіть друзям — разом швидше наберемо 1000 голосів</p>
+      <p>Поділіться з друзями — разом переможемо</p>
       <div className="share-row">
         <button className="share-btn" onClick={() => shareTo('telegram')}>Telegram</button>
         <button className="share-btn" onClick={() => shareTo('viber')}>Viber</button>

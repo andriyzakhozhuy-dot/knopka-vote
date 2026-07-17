@@ -27,13 +27,11 @@ export default function Home() {
         </header>
 
         <section className="hero reveal">
-          <h1>
-            Хочете, щоб акція
-            <br />
-            тривала довше?
-          </h1>
-          <p>Проголосуйте, і якщо набереться 1000 голосів, ми продовжимо акцію</p>
+          <h1>Петиція на продовження акції</h1>
+          <p>Рюкзак + знижка -50% на канцтовари до школи</p>
         </section>
+
+        <ShareButtons />
 
         <VoteSection />
 
@@ -57,8 +55,6 @@ export default function Home() {
             </a>
           </div>
         </section>
-
-        <ShareButtons />
 
         <footer className="reveal">
           <div className="footer-grid">

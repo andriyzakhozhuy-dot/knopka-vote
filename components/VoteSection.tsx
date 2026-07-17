@@ -5,7 +5,7 @@ import { showToast } from '@/lib/toast';
 import { burstConfetti } from '@/lib/confetti';
 import { trackVoteEvent } from '@/lib/analytics';
 
-const GOAL = 1000;
+const GOAL = 5000;
 const CIRC = 2 * Math.PI * 95;
 
 export default function VoteSection() {
@@ -125,7 +125,7 @@ export default function VoteSection() {
         <div className="ring-center">
           <div className="bag">🎒</div>
           <div className="ring-count">{count}</div>
-          <div className="ring-goal">з 1000 голосів</div>
+          <div className="ring-goal">з 5000 голосів</div>
         </div>
       </div>
 
@@ -133,7 +133,7 @@ export default function VoteSection() {
         {voted ? 'Дякуємо! Ваш голос враховано ✓' : 'ПРОГОЛОСУВАТИ'}
       </button>
       <div className="deadline">
-        Голосування триває до <b>19 липня</b> — тоді ми оголосимо рішення
+        Голосування триває до <b>20 липня</b> — тоді ми оголосимо рішення
       </div>
     </section>
   );
